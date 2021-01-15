@@ -1,0 +1,21 @@
+
+
+
+//eliminar todos los contenedores
+docker rm -v contenedor-php contenedor-phpmyadmin contenedor-servidor-mysql
+
+//eliminar todas las imagenes
+docker rmi carrito_web mysql:5.7 php:7.4-apache phpmyadmin/phpmyadmin
+
+//eliminar volumen
+
+docker volume rm carrito_archivo_db
+
+//
+docker-compose up -d
+
+
+
+copia base de datos
+
+mysqldump -h 172.20.0.2 -u root -p sabor_casero>sabor_casero.sql

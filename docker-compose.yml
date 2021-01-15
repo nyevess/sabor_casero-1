@@ -1,0 +1,68 @@
+# version de docker
+version: "3"
+
+# contenedores que se lanzaran
+# en este caso se lanzaran 3 contenedores
+services:
+  # contenedor servidor servicio mysql. <<<<<<<<<<<<<<<<<<<<<
+  mysql:
+    image: mysql:5.7
+    container_name: contenedor-servidor-mysql
+    # definicion de las variables de entorno
+    environment:
+      MYSQL_DATABASE: sabor_casero
+      MYSQL_ROOT_PASSWORD: 12345
+    ports:
+      # puerto de mysql por defecto 
+      # 3306 => puerto publico dentro del contenedor : 3306 -> puerto privado del contendor
+  
+      - "3306:3306"
+    volumes:
+      # carpeta local database : carpeta contenedor
+      # el volumen archivo_db permite que los cambios hechos por 
+      # el contenedor php y phpmyadmin persistan en la base de datos
+      # los archivos se guardan en /var/lib/mysql dentro del contenedor
+      - archivo_db:/var/lib/mysql
+    restart: always
+  # contenedor servidor web apache - PHP <<<<<<<<<<<<<<<<
+  web:
+    # creamos una imagen personalizada desde el archivo Dockerfile-php
+    # la cargamos desde la carpeta (context) actual . 
+    # damos al archivo un nombre diferente al Dockerfile porque podamos
+    # reconocer el archivo
+    build:
+      context: "."
+      dockerfile: "./docker/Dockerfile"
+    container_name: contenedor-php
+    ports:
+      # 80 => puerto publico dentro del contenedor : 80 -> puerto privado del contendor
+      - "80:80"
+    volumes:
+      # volumen local : volumen del contenedor
+      # se actualiza automaticamente los archivos locales
+      # con los archivos dentro del contenedor
+ 
+      - ./www:/var/www/html
+    links:
+      # link auto con mysql
+      - mysql
+  # contenedor servidor PHPMYADMIN <<<<<<<<<<<<<<<<<<<<<<<<<<
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: contenedor-phpmyadmin
+    links:
+      # link auto con mysql
+      - mysql
+    # variables de entorno del phpmyadmin
+    # nombre del host: mysql
+    # PMA_HOST define la direccion o el nombre del servidor mysql
+    # puerto PMA_PORT "3306"
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 8081:80
+volumes:
+  archivo_db: {}
