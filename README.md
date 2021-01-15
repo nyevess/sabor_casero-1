@@ -1,19 +1,5 @@
-# Plantilla FrontEnd con SASS
-##### Plantilla Básica para poder empezar casi cualquier proyecto en **FrontEnd**.
+##PROYECTO FINAL ASIR
+Aplicación web alojada en contenedores Docker
 
-~~~
-Metodología de carpetas en FrontEnd
-Estructura en imágenes (svg, jpg, iconos, etc)
-Readme, licencia MIT, gitignore
-Fuentes externas al OS
-Semiestructuras en código
-Comentarios introductorios
-PreCompilador SASS
-~~~
-
-> Este contenido se ha creado para mís alumnos, que se inician en el maravilloso mundo de la programación.
-
-
----
-###### _Copyright 2020 - Toni Ferra_
+Creada con: - HTML5 - CSS3 - PHP - MYSQL - DOCKER
 
