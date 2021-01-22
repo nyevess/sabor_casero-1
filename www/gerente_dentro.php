@@ -6,7 +6,6 @@
   <head>
     <!-- links de estilos-->
     <link rel="stylesheet" href="css/main.css"/>
-    <!--Google Fonts-->
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="theme-color" content="#fafafa"/>
   </head>

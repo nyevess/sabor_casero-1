@@ -5,18 +5,9 @@
 <html lang="es">
 
 <head>
-  <!-- App Web, inidicar al navegador que elementos mostrar en un JSON-->
-  <link rel="manifest" href="site.webmanifest" />
-  <!-- icono de acceso para IOS-->
-  <link rel="apple-touch-icon" href="icon.png" />
-  <!-- Recordar que favicon.ico tiene que estar en el directorio inicial-->
-  <!-- links de estilos-->
-  <link rel="stylesheet" href="css/main.css" />
-  <!--Google Fonts-->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Se cambia el tema de algunos navegadores-->
-  <meta name="theme-color" content="#fafafa" />
-  <link rel="stylesheet" href="../css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#fafafa"/>
+    <link rel="stylesheet" href="../css/main.css"/>
 </head>
 
 <body>

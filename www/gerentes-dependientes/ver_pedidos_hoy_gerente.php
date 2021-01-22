@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/main.css"/>
     <link rel="stylesheet" href="../css/pedidos.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="theme-color" content="#fafafa"/><link rel="stylesheet" href="../css/main.css"/>
+    <meta name="theme-color" content="#fafafa"/>
   </head>
   <body>
     <div class="container__pagina">
