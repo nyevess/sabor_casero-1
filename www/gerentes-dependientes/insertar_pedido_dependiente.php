@@ -10,6 +10,7 @@ ob_start();
     <meta name="theme-color" content="#fafafa"/>
     <link rel="stylesheet" href="../css/main.css"/>
     <link rel="stylesheet" href="../css/pedidos.css"/>
+    <title>Sabor Casero</title>
 
   </head>
   <body>
