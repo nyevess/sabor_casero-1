@@ -125,7 +125,7 @@ INSERT INTO `platos` (`id_plato`, `plato`, `foto`, `descripcion`, `pvp`) VALUES
 (3, 'Entrecot', '../assets/img/desktop/entrecot.jpg', 'Entrecot de ternera a la parrilla con verduritas y patatas fritas', 8.5),
 (4, 'Pechugas rebozadas', '../assets/img/desktop/rebozado.jpg', 'Pechugas de pollo rebozadas con patatas fritas', 5.5),
 (5, 'Calamares', '../assets/img/desktop/calamares.jpg', 'Calamares con nuestra receta casera de salsa americana.', 6.5),
-(6, 'Ensaladilla', 'Ensaladilla rusa con mayonesa casera, zanahoria, huevo, guisantes, judías verdes y pimiento rojo.', 4.5);
+(6, 'Ensaladilla','../assets/img/desktop/ensaladilla.jpg', 'Ensaladilla rusa con mayonesa casera, zanahoria, huevo, guisantes, judías verdes y pimiento rojo.', 4.5);
 
 -- --------------------------------------------------------
 

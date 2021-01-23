@@ -2,14 +2,14 @@
 
 
 //eliminar todos los contenedores
-docker rm -v contenedor-php contenedor-phpmyadmin contenedor-servidor-mysql
+docker rm -v -f contenedor-php contenedor-phpmyadmin contenedor-servidor-mysql
 
 //eliminar todas las imagenes
-docker rmi carrito_web mysql:5.7 php:7.4-apache phpmyadmin/phpmyadmin
+docker rmi sabor_casero_web mysql:5.7 php:7.4-apache phpmyadmin/phpmyadmin
 
 //eliminar volumen
 
-docker volume rm carrito_archivo_db
+docker volume rm sabor_casero_archivo_db
 
 //
 docker-compose up -d
