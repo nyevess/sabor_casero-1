@@ -5,10 +5,10 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <!-- links de estilos-->
     <link rel="stylesheet" href="css/main.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-      <meta name="theme-color" content="#fafafa"/>
+    <meta name="theme-color" content="#fafafa"/>
+    <title>Sabor Casero</title>
   </head>
   <body>
     <div class="container__pagina">

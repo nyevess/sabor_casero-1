@@ -393,6 +393,21 @@ figure h4 {
   border-radius: 15px;
   padding: 10px;
 }
+.ver__pedido{
+  display:flex;
+  flex-direction: column;
+  height: 80%;
+}
+.input{
+  height: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.label{
+margin-top: 10px;
+font-weight: bold;
+}
+
 
 
 
