@@ -8,8 +8,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="theme-color" content="#fafafa"/>
-    <link rel="stylesheet" href="../css/main.css"/>
-    <link rel="stylesheet" href="../css/pedidos.css"/>
+  <link rel="stylesheet" href="../css/main.css"/>
+
     <title>Sabor Casero</title>
 
   </head>
@@ -115,7 +115,7 @@ include("script/sesion_geren.php");
                 <?php 
                 include("/../pdo/conex.php");
                 //creamos una variable para almacenar la consulta
-                $sql="SELECT email FROM usuarios";
+                $sql="SELECT email FROM usuarios WHERE id_rol=3";
                 $clientes=$base->prepare($sql);
                 $clientes->execute();
                 while ($devuelve=$clientes->fetch(PDO::FETCH_ASSOC)){
@@ -136,7 +136,7 @@ include("script/sesion_geren.php");
                 <option value="recoger">Recoger en local</option>
 
               </select>
-              <button class="input"  type="submit" name="nuevo">Siguiente</button>
+              <button class="input"  type="submit" name="nuevo">Realizar pedido!</button>
               <button class="input"  type="submit" name="vaciar">Vaciar Carrito</button>
               <?php
 
