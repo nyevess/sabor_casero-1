@@ -27,9 +27,8 @@
           <article class="main__php">
           <h2>
           <?php
-include("script/sesion_geren.php");
-
-        ?></h2>
+include("script/sesion_geren.php"); ?>
+          </h2>
           </article>
           <nav class="main__nav"> <a href="cambiar_datos_cliente_gerente.php">
             <h4 class="insertar__pedido">VER/CAMBIAR DATOS CLIENTE</h4></a

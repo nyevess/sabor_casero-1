@@ -32,8 +32,8 @@ CREATE TABLE `contienen` (
   `id_pedido` int(11) NOT NULL,
   `id_plato` int(11) NOT NULL,
   `n_linea` int(11) NOT NULL,
-  `cantidad` float NOT NULL,
-  `precio` float NOT NULL,
+  `cantidad` int(11) NOT NULL,
+  `precio` decimal(5,2) NOT NULL,
   `total` decimal(5,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -112,7 +112,7 @@ CREATE TABLE `platos` (
   `plato` varchar(127) DEFAULT 'NULL',
   `foto` varchar(127) DEFAULT 'NULL',
   `descripcion` text DEFAULT NULL,
-  `pvp` float DEFAULT NULL
+  `pvp` decimal(5,2) DEFAULT NULL
 ) ENGINE=InnoDB AVG_ROW_LENGTH=5461 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
 
 --
@@ -125,7 +125,7 @@ INSERT INTO `platos` (`id_plato`, `plato`, `foto`, `descripcion`, `pvp`) VALUES
 (3, 'Entrecot', '../assets/img/desktop/entrecot.jpg', 'Entrecot de ternera a la parrilla con verduritas y patatas fritas', 8.5),
 (4, 'Pechugas rebozadas', '../assets/img/desktop/rebozado.jpg', 'Pechugas de pollo rebozadas con patatas fritas', 5.5),
 (5, 'Calamares', '../assets/img/desktop/calamares.jpg', 'Calamares con nuestra receta casera de salsa americana.', 6.5),
-(6, 'Ensaladilla', 'Ensaladilla rusa con mayonesa casera, zanahoria, huevo, guisantes, judías verdes y pimiento rojo.', 4.5);
+(6, 'Ensaladilla', '../assets/img/desktop/ensaladilla.jpg','Ensaladilla rusa con mayonesa casera, zanahoria, huevo, guisantes, judías verdes y pimiento rojo.', 4.5);
 
 -- --------------------------------------------------------
 
