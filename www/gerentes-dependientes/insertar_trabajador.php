@@ -48,23 +48,23 @@ include("script/sesion_geren.php"); ?>
             <form class="formulario__insertar" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
               <h4 class="insertar__titulo">Insertar nuevo trabajador: </h4>
               <label for="nombre">Nombre:</label>
-              <input name="nombre" placeholder="Introduce el nombre"/>
+              <input name="nombre" required placeholder="Introduce el nombre"/>
               <label for="apellido">Apellidos:</label>
-              <input name="apellido" placeholder="Introduce los apellidos"/>
+              <input name="apellido" required placeholder="Introduce los apellidos"/>
               <label for="email">Email:</label>
-              <input name="email" placeholder="Introduce el email"/>
+              <input name="email" required placeholder="Introduce el email"/>
               <label for="direccion">Direccion:</label>
-              <input name="direccion" placeholder="Introduce la direccion"/>
+              <input name="direccion" required placeholder="Introduce la direccion"/>
               
               <label for="cp">CP:</label>
-              <input name="cp" placeholder="Introduce el CP"/>
+              <input name="cp" required placeholder="Introduce el CP"/>
 
               <label for="poblacion">Población:</label>
-              <input name="poblacion" placeholder="Introduce la poblacion"/>
+              <input name="poblacion" required placeholder="Introduce la poblacion"/>
               <label for="tel">Teléfono</label>
-              <input name="tel" placeholder="Introduce el teléfono"/>
+              <input name="tel" required placeholder="Introduce el teléfono"/>
                 <label for="clave">Contraseña</label>
-              <input name="clave" placeholder="Introduce una contraseña"/>
+              <input name="clave" type="password" required placeholder="Introduce una contraseña"/>
               <button type="submit" name="registrar">Registrar</button>
             </form>
             <?php

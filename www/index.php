@@ -58,25 +58,25 @@
             <form class="main__form__registro" method="POST" action="index_registrado.php">
               <h4>REGISTRATE</h4>
               <label for="nombre">Nombre:</label>
-              <input type="text" name="nombre" placeholder="Introduce tu nombre"/>
+              <input type="text" required name="nombre" placeholder="Introduce tu nombre"/>
 
               <label for="apellidos">Apellidos:</label>
-              <input type="text" name="apellidos" placeholder="Introduce tus apellidos"/>
+              <input type="text" required name="apellidos" placeholder="Introduce tus apellidos"/>
 
               <label for="direccion">Dirección:</label>
-              <input type="text" name="direccion" placeholder="Introduce tu direccion"/>
+              <input type="text" required name="direccion" placeholder="Introduce tu direccion"/>
 
               <label for="cp">Código postal:</label>
-              <input type="text" name="cp" placeholder="Introduce tu CP"/>
+              <input type="number" required name="cp" placeholder="Introduce tu CP"/>
 
               <label for="poblacion">Población:</label>
-              <input type="text" name="poblacion" placeholder="Introduce tu poblacion"/>
+              <input type="text" required name="poblacion" placeholder="Introduce tu poblacion"/>
               <label for="telefono">Teléfono:</label>
-              <input type="text" name="telefono" placeholder="Introduce tu telefono"/>
+              <input type="number" required name="telefono" placeholder="Introduce tu telefono"/>
               <label for="email">Email:</label>
-              <input type="email" name="email" placeholder="Introduce tu email"/>
+              <input type="email" required name="email" placeholder="Introduce tu email"/>
               <label for="clave">Contraseña:</label>
-              <input type="password" name="clave" placeholder="Introduce tu clave"/>
+              <input type="password" required name="clave" placeholder="Introduce tu clave"/>
               <button type="submit" name="enviar">REGISTRO</button>
             </form>
           </section>
