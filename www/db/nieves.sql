@@ -125,11 +125,7 @@ INSERT INTO `platos` (`id_plato`, `plato`, `foto`, `descripcion`, `pvp`) VALUES
 (3, 'Entrecot', '../assets/img/desktop/entrecot.jpg', 'Entrecot de ternera a la parrilla con verduritas y patatas fritas', 8.5),
 (4, 'Pechugas rebozadas', '../assets/img/desktop/rebozado.jpg', 'Pechugas de pollo rebozadas con patatas fritas', 5.5),
 (5, 'Calamares', '../assets/img/desktop/calamares.jpg', 'Calamares con nuestra receta casera de salsa americana.', 6.5),
-<<<<<<< HEAD
 (6, 'Ensaladilla', '../assets/img/desktop/ensaladilla.jpg','Ensaladilla rusa con mayonesa casera, zanahoria, huevo, guisantes, judías verdes y pimiento rojo.', 4.5);
-=======
-(6, 'Ensaladilla','../assets/img/desktop/ensaladilla.jpg', 'Ensaladilla rusa con mayonesa casera, zanahoria, huevo, guisantes, judías verdes y pimiento rojo.', 4.5);
->>>>>>> 35005af287679547fb56d69a132c0bc484df9a4a
 
 -- --------------------------------------------------------
 
@@ -176,8 +172,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `email`, `clave`, `nombre`, `apellidos`, `direccion`, `cp`, `poblacion`, `provincia`, `tlf`, `id_rol`) VALUES
-(1, 'ana@casero.com', '$2y$10$z6oBl2e.mrJ8OhLcJpNaSeFoB9xH49.GA.UO/V1VAkRqSnyLvx1RO', 'Ana', 'Marín del Moral', 'C/ Aucanada 20, bajos', 7141, 'Marratxí', '\'Baleares\'', '666552211', 1),
-(2, 'miguel@casero.com', '$2y$10$6HFalRbfiucOgQvBsLop9ei2UW96YFZz104k8toO8pOBLA1BvgcEO', 'Miguel', 'Bolívar García', 'C/ Formentera 15, bajo B', 7008, 'Palma de Mallorca', '\'Baleares\'', '699551133', 2),
+(1, 'ana@casero.com', '$2y$10$G.KOO43HUVZKFgE.Logi2OqqRq.tSQ1yg8Tz0kSyOqJbxjKmMKrSi', 'Ana', 'Marín del Moral', 'C/ Aucanada 20, bajos', 7141, 'Marratxí', '\'Baleares\'', '666552211', 1),
+(2, 'miguel@casero.com', '$2y$10$G.KOO43HUVZKFgE.Logi2OqqRq.tSQ1yg8Tz0kSyOqJbxjKmMKrSi', 'Miguel', 'Bolívar García', 'C/ Formentera 15, bajo B', 7008, 'Palma de Mallorca', '\'Baleares\'', '699551133', 2),
 (3, 'belen@gmail.com', '$2y$10$fUqp7YYH3Od43Z6fYdx8qeUEQ/2S2xRf4ygnLXV8Z4pdPGM42xZaC', 'Belén ', 'Nieto Garrido', 'C/ Puig Major 38, bajo', 7005, 'Palma de Mallorca', '\'Baleares\'', '688447755', 3),
 (4, 'luis@gmail.com', '$2y$10$qckg/9kbr9P7.oB7465akeIFmE11Sfc4iX8CUew5AZic1BqiueBSy', 'Luis', 'Antunez Riera', 'C/ Rosa 5, bajo B', 7006, 'Palma de Mallorca', '\'Baleares\'', '677448855', 3),
 (5, 'daniela@gmail.com', '$2y$10$dYEBk/z7sr20Y3sscUW5muIuvTaaMfm.KmkgDIuzxQ1aw5dpwFiwS', 'Daniela', 'Gómez Nieto', 'c/ cid 58, 4º piso pta 3', 7004, 'Palma de Mallorca', '\'Baleares\'', '6114455', 3),
